@@ -1,0 +1,404 @@
+{
+	"info": {
+		"_postman_id": "8b61d084-6561-4285-b6d1-aea9759e185a",
+		"name": "LibraryAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22643612"
+	},
+	"item": [
+		{
+			"name": "BookList",
+			"item": [
+				{
+					"name": "GetAllBookList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/booksList/allBooks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"booksList",
+								"allBooks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByBookId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/booksList/bookById/10000001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"booksList",
+								"bookById",
+								"10000001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateBookList",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<bookList>\r\n    <authorName>R.D.Sharma</authorName>\r\n    <bookId>10000006</bookId>\r\n    <bookName>Higher Maths</bookName>\r\n    <status>Available</status>\r\n</bookList>"
+						},
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/booksList/createbooklist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"booksList",
+								"createbooklist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBy id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/booksList/delete/10000003",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"booksList",
+								"delete",
+								"10000003"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Ststus",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/booksList/update/10000003",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"booksList",
+								"update",
+								"10000003"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByBookName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/booksList/bookByBookName/History",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"booksList",
+								"bookByBookName",
+								"History"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByAuthorName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/booksList/bookByAuthorName/Suman",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"booksList",
+								"bookByAuthorName",
+								"Suman"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Book Status",
+			"item": [
+				{
+					"name": "GetAllBookStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/bookStatus/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"bookStatus",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByIssueId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/bookStatus/byIssueId/20001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"bookStatus",
+								"byIssueId",
+								"20001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/bookStatus/deletebyId/20001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"bookStatus",
+								"deletebyId",
+								"20001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateByID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/bookStatus/update/20001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"bookStatus",
+								"update",
+								"20001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateByID Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    <bookStatus>\r\n        <bookId>10000005</bookId>\r\n        <bookName>Social Science</bookName>\r\n        <contactNo>7569875764</contactNo>\r\n        <issueDate>27/04/2023</issueDate>\r\n        <issueId>20002</issueId>\r\n        <issuedAddress>Ram Nagar,Coimbatore</issuedAddress>\r\n        <issuedFor>Anurag Shukla</issuedFor>\r\n    </bookStatus>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/bookStatus/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"bookStatus",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByBookId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/bookStatus/byBookId/10000001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"bookStatus",
+								"byBookId",
+								"10000001"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllByTakenDate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/bookStatus/byTakenDate/27/04/2023",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"bookStatus",
+								"byTakenDate",
+								"27",
+								"04",
+								"2023"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllByReturnDate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/library_management/webresources/bookStatus/byReturnDate/27/04/2023",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"library_management",
+								"webresources",
+								"bookStatus",
+								"byReturnDate",
+								"27",
+								"04",
+								"2023"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,8 +1,10 @@
-
+For BookList Resource:
 
 for Get:
 http://localhost:8080/library_management/webresources/booksList/allBooks
-http://localhost:8080/library_management/webresources/booksList/bookById/10000001
+http://localhost:8080/library_management/webresources/booksList/bookById/10000002
+http://localhost:8080/library_management/webresources/booksList/bookByBookName/History
+http://localhost:8080/library_management/webresources/booksList/bookByAuthorName/Suman
 
 for Post:
 http://localhost:8080/library_management/webresources/booksList/createbooklist
@@ -12,3 +14,26 @@ http://localhost:8080/library_management/webresources/booksList/delete/10000003
 
 for update:
 http://localhost:8080/library_management/webresources/booksList/update/10000003
+
+
+
+
+
+For BookStatus Resource:
+
+For Get/Fetch Request:
+http://localhost:8080/library_management/webresources/bookStatus/all
+http://localhost:8080/library_management/webresources/bookStatus/byIssueId/20001
+http://localhost:8080/library_management/webresources/bookStatus/byBookId/10000001
+
+
+For Post/Create Request:
+http://localhost:8080/library_management/webresources/bookStatus/create
+
+
+For Put/Update Request:
+http://localhost:8080/library_management/webresources/bookStatus/update/20001
+
+
+For Delete Request:
+http://localhost:8080/library_management/webresources/bookStatus/deletebyId/20001
