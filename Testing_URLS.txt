@@ -1,0 +1,14 @@
+
+
+for Get:
+http://localhost:8080/library_management/webresources/booksList/allBooks
+http://localhost:8080/library_management/webresources/booksList/bookById/10000001
+
+for Post:
+http://localhost:8080/library_management/webresources/booksList/createbooklist
+
+for delete:
+http://localhost:8080/library_management/webresources/booksList/delete/10000003
+
+for update:
+http://localhost:8080/library_management/webresources/booksList/update/10000003
